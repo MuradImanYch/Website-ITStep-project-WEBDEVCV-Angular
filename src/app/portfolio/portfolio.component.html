@@ -1,0 +1,28 @@
+<div id="pfWrap">
+    <h2>Портфолио</h2>
+</div>
+<div class="container">
+    <i class="fas fa-filter"></i><span>Фильтры</span>
+    <div id="mobfilterWrap">
+        <ul>
+            <li><a [routerLink]="['/portfolio', 'all']">Все</a></li>
+            <li><a [routerLink]="['/portfolio', 'bootstrap']">Bootstrap</a></li>
+            <li><a [routerLink]="['/portfolio', 'materialize']">Materialize</a></li>
+            <li><a [routerLink]="['/portfolio', 'responsive']">Responsive</a></li>
+            <li><a [routerLink]="['/portfolio', 'other']">Другие</a></li>
+        </ul>
+    </div>
+    <div id="descFilterWrap">
+        <ul>
+            <li><a [routerLink]="['/portfolio', 'all']">Все</a></li>
+            <li><a [routerLink]="['/portfolio', 'bootstrap']">Bootstrap</a></li>
+            <li><a [routerLink]="['/portfolio', 'materialize']">Materialize</a></li>
+            <li><a [routerLink]="['/portfolio', 'responsive']">Responsive</a></li>
+            <li><a [routerLink]="['/portfolio', 'other']">Другие</a></li>
+        </ul>
+    </div>
+</div>
+<div class="filterContainer">
+    <router-outlet></router-outlet>
+</div>
+

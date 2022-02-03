@@ -1,0 +1,105 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+#myPhoto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#myPhoto img {
+  width: 250px;
+}
+#abtWrap {
+  width: 100%;
+  height: 16vh;
+  background: #f26648;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 40% 40%;
+}
+#abtWrap h2 {
+  margin: 45px 0 0 0;
+  font-size: 1.7em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  padding: 40px 0;
+  margin: auto;
+  max-width: 97%;
+}
+p {
+  margin: 15px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-size: 1.2em;
+  color: #f26648;
+  text-align: center;
+}
+#aboutSocNetDiv {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+#aboutSocNetDiv .square {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #f26648;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutSocNetDiv a:hover .square {
+  border: 2px solid rgba(39, 44, 45, 1);
+  transition: 0.3s;
+}
+#mail {
+  font-size: 1.2em;
+  margin: 60px 0 0 0;
+}
+.fa-envelope {
+  font-size: 2em;
+  color: #f26648;
+}
+h2:not(:first-child) {
+  color: rgba(39, 44, 45, 1);
+  font-size: 2em;
+  text-decoration: underline;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+ul li {
+  color: #f26648;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.progress {
+  display: inline-block;
+  width: 0px;
+  height: 14px;
+  background-color: rgba(39, 44, 45, 0.7);
+  margin: 0 0 0 13px;
+}
+
+@media (min-width: 768px) {
+  #aboutSocNetDiv {
+    width: 340px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #abtWrap {
+    height: 20vh;
+  }
+  #abtWrap h2 {
+    margin: 55px 0 0 0;
+  }
+}

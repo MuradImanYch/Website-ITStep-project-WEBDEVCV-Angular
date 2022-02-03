@@ -1,0 +1,103 @@
+section {
+    width: 100%;
+    min-height: 40vh;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+section:nth-child(odd) {
+    background-color: #f26648;
+}
+section div {
+    width: 100%;
+    height: 35vh;
+}
+section div img {
+    width: 100%;
+    height: 35vh;
+}
+section h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 25px 0 0 0;
+}
+section p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 15px 0 0 0;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 15px 0;
+    text-decoration: underline;
+}
+section .title {
+    border-bottom: none;
+    color: #fff;
+    text-decoration: none;
+}
+.titleBtn:hover {
+    color: rgba(39, 44, 45, 1);
+}
+i {
+    position: absolute;
+    top: 28%;
+    left: -18%;
+    font-size: 3.5em;
+    display: none;
+}
+
+@media (max-width: 320px) {
+    i {
+        top: 28%;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    section div {
+        height: 45vh;
+    }
+    section div img {
+        height: 45vh;
+    }
+    i {
+        top: 34%;
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1025px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    section div {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        cursor: default
+    }
+    section div img {
+        width: 40%;
+        height: 50vh;
+        cursor: pointer;
+    }
+    .titleBtn {
+        cursor: pointer;
+    }
+    section div img:hover {
+        transform: scale(1.11);
+        transition: 0.3s;
+    }
+    i {
+        top: 28%;
+        font-size: 5em;
+        cursor: pointer;
+        z-index: 3;
+        left: 47%;
+    }
+
+}

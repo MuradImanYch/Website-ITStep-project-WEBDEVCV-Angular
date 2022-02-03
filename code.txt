@@ -1,0 +1,50 @@
+// mob menu toggle
+			let menuToggle = false;
+			$('nav i').click(function () { 
+				$('#mobNavWrap').slideToggle();
+				menuToggle = !menuToggle;
+				if (menuToggle == true) {
+					$(this).attr('class', 'fas fa-times');
+				}
+				else {
+					$(this).attr('class', 'fas fa-bars');
+				}
+			});
+
+< 1024
+// more details for portfolio
+				$('#portfolio p').eq(1).click(function () { 
+					$('#mobNavWrap').slideToggle();
+					menuToggle = !menuToggle;
+					if (menuToggle == true) {
+						$('nav i').attr('class', 'fas fa-times');
+					}
+					else {
+						$('nav i').attr('class', 'fas fa-bars');
+					}
+				});
+
+
+// more details for services
+				$('#services p').eq(3).click(function () {
+					$('#mobNavWrap').slideToggle();
+					menuToggle = !menuToggle;
+					if (menuToggle == true) {
+						$('nav i').attr('class', 'fas fa-times');
+					}
+					else {
+						$('nav i').attr('class', 'fas fa-bars');
+					}
+				});
+
+// more details for about
+				$('#about p').eq(1).click(function () {
+					$('#mobNavWrap').slideToggle();
+					menuToggle = !menuToggle;
+					if (menuToggle == true) {
+						$('nav i').attr('class', 'fas fa-times');
+					}
+					else {
+						$('nav i').attr('class', 'fas fa-bars');
+					}
+				});

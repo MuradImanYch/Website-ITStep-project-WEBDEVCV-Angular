@@ -1,0 +1,74 @@
+<!---------header & nav--------->
+<header id="header">
+    <div id="progressBar"></div>
+    <nav>
+        <i class="fas fa-bars"></i>
+        <a routerLink=""><h1>WEBDEV<span>CV</span></h1></a>
+        <div></div>
+        <div id="descNavWrap">
+            <ul>
+                <li><a routerLink="">Главная</a></li>
+                <li><a routerLink="portfolio/all">Портфолио</a></li>
+                <li><a routerLink="services">Услуги</a></li>
+                <li><a routerLink="about">Обо мне</a></li>
+                <li><a>Обратная связь</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mobNavWrap">
+        <ul>
+            <li><a routerLink="">Главная</a></li>
+            <li><a routerLink="portfolio/all">Портфолио</a></li>
+            <li><a routerLink="services">Услуги</a></li>
+            <li><a routerLink="about">Обо мне</a></li>
+            <li><a>Обратная связь</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <router-outlet></router-outlet>
+    <section id="contacts">
+        <div class="container">
+            <article>
+                <h3>Обратная связь</h3>
+                <form action="">
+                    <label for="fullName">Имя</label>
+                    <input type="text" name="fullName">
+                    <label for="email">Почта</label>
+                    <input type="text" name="email">
+                    <label for="message">Сообщение</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <a routerLink=""><h1>WEBDEV<span>CV</span></h1></a>
+        <div id="footerNavList">
+            <ul>
+                <li><a routerLink="">Главная</a></li>
+                <li><a routerLink="portfolio/all">Портфолио</a></li>
+                <li><a routerLink="services">Услуги</a></li>
+                <li><a routerLink="about">Обо мне</a></li>
+                <li><a>Обратная связь</a></li>
+            </ul>
+        </div>
+        <div id="madeWith">
+            <p>Сайт сделан с помощью технологий:</p>
+            <ul>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-js"></i></li>
+                <li><img src="assets/ico/jquery.png"></li>
+                <li><i class="fab fa-angular"></i></li>
+            </ul>
+        </div>
+        <span>Copyright &copy; <span id="year"></span> | by IMANYCH</span>
+    </div>
+    
+</footer>
+<div id="scrollDiv"><i class="fas fa-angle-up"></i></div>
+

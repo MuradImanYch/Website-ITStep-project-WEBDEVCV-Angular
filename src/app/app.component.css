@@ -1,0 +1,302 @@
+/*--------mobile--------*/
+#progressBar {
+  position: fixed;
+  width: 0%;
+  height: 4px;
+  background-color: #f26648;
+  z-index: 3;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(39, 44, 45, 0.8);
+  position: fixed;
+  z-index: 3;
+  transition: 0.2s;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+h1 {
+  font-size: 1.5em;
+  color: #f26648;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  width: 150px;
+  transition: 0.2s;
+}
+h1 span {
+  color: #fff;
+  transition: 0.2s;
+}
+.fa-bars {
+  font-size: 2em;
+}
+.fa-times {
+  font-size: 2.5em;
+}
+#mobNavWrap {
+  height: 285px;
+  width: 100%;
+  background-color: rgba(39, 44, 45, 0.7);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid rgba(39, 44, 45, 0.7);
+}
+#mobNavWrap ul {
+  width: 100%;
+}
+#mobNavWrap ul li {
+  margin: 15px 0 0 0;
+}
+#mobNavWrap ul li a {
+  padding: 10px;
+  display: block;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+#mobNavWrap ul li a:hover {
+  background-color: #f26648;
+  transition: 0.3s;
+}
+#descNavWrap {
+  display: none;
+}
+#contacts {
+  min-height: 70vh;
+  background-color: #f26648;
+  padding: 40px 0;
+  text-align: center;
+}
+#contacts .container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contacts h3 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7em;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+#contacts form label {
+  display: block;
+  text-align: left;
+  margin: 20px 0 0 0;
+  font-family: "Roboto", sans-serif;
+}
+#contacts form input {
+  width: 100%;
+  margin: 5px 0 0 0;
+  height: 40px;
+  font-size: 1.2em;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+#contacts form textarea {
+  resize: none;
+  margin: 5px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: none;
+}
+#contacts form input:last-child {
+  width: 100%;
+  display: block;
+  margin: 20px 0 0 0;
+  height: 45px;
+  cursor: pointer;
+  background-color: #3eba00;
+  font-family: "Roboto", sans-serif;
+}
+#contacts form input:last-child:hover {
+  background-color: #2f8c00;
+  transition: 0.3s;
+}
+footer {
+  width: 100%;
+  min-height: 65vh;
+  background-color: rgba(39, 44, 45, 1);
+}
+#madeWith {
+  margin: 35px 0 0 0;
+}
+#madeWith ul {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin: 5px 0 0 0;
+}
+footer ul li {
+  margin: 10px 0 0 0;
+  font-size: 1.1em;
+}
+#madeWith p {
+  font-family: "Roboto", sans-serif;
+}
+#madeWith ul li img {
+  width: 40px;
+}
+#madeWith i {
+  font-size: 2.2em;
+}
+footer .container {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer span {
+  margin: 25px 0 0 0;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+}
+#footerNavList ul li a:hover {
+  color: #f26648;
+}
+#footerNavList ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+#scrollDiv {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(39, 44, 45, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  cursor: pointer;
+}
+#scrollDiv i {
+  font-size: 2em;
+}
+#scrollDiv:hover {
+  background-color: rgba(39, 44, 45, 0.9);
+  transition: 0.5s;
+}
+
+@media (min-width: 481px) {
+  #contacts form input:last-child {
+    width: 300px;
+    display: block;
+  }
+}
+
+@media (max-width: 321px) {
+  footer {
+    min-height: 75vh;
+  }
+  footer .container {
+    min-height: 75vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #contacts {
+    min-height: 50vh;
+  }
+  #contacts .container {
+    min-height: 50vh;
+  }
+  footer {
+    min-height: 45vh;
+  }
+  footer .container {
+    min-height: 45vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 60px;
+  }
+  nav {
+    height: 60px;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  nav div:nth-child(1),
+  nav .fa-bars {
+    display: none;
+  }
+  #descNavWrap {
+    display: block;
+    width: 630px;
+    height: 60px;
+  }
+  #descNavWrap ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+  #descNavWrap ul li a {
+    padding: 11px 18px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #descNavWrap ul li a:hover {
+    border: 2px solid #f26648;
+    color: #f26648;
+    padding: 9px 16px;
+    transition: 0.1s;
+  }
+  #footerNavList ul {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+  }
+  #footerNavList ul li {
+    border-right: 2px solid #fff;
+    padding-right: 18px;
+  }
+  #footerNavList ul li:last-child {
+    border-right: 0px solid #fff;
+  }
+  #footerNavList ul li a:last-child {
+    cursor: pointer;
+  }
+  footer {
+    min-height: 55vh;
+  }
+  footer .container {
+    min-height: 55vh;
+  }
+  #footerNavList ul {
+    flex-direction: row;
+  }
+  #scrollDiv {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    right: 2%;
+    bottom: 3%;
+  }
+}

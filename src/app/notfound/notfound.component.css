@@ -1,0 +1,16 @@
+.container {
+    padding: 80px 0 0 0;
+    min-height: 50vh;
+    max-width: 97%;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    color: rgba(39, 44, 45, 1);
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 300px;
+    margin: 10px 0 0 0;
+}
